@@ -1,0 +1,35 @@
+$max: 1400px;
+$extra-lg: 1300px;
+$lg: 1219px;
+$md: 991px;
+$sm: 767px;
+$xs: 567px;
+$mobile: 359px;
+
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$accent: #018af3;
+
+$danger: #e52208;
+$warning: #e4ec00;
+$info: #0dd8f3;
+$success: #0fb500;
+$divider: #d3d1d1;
+
+$main-font: "ABBVoice", sans-serif;
+$secondary-font: "Helvetica", sans-serif;
+
+$text-primary: #0f0f0f;
+$text-secondary: #767676;
+$text-tertiary: #a9a9a9;
+
+$fill-primary: #292929;
+$fill-secondary: #292929;
+
+@mixin c-pointer {
+  cursor: pointer;
+}
+
+@mixin c-default {
+  cursor: default;
+}

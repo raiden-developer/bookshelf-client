@@ -1,0 +1,10 @@
+@import "../../../scss/global/variables.scss";
+
+.header {
+  border-bottom: 1px solid $divider;
+}
+
+.header__inner {
+  padding: 20px 0;
+  display: flex;
+}
