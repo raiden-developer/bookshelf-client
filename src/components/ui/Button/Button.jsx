@@ -1,7 +1,7 @@
 import styles from './Button.module.scss'
 import cn from 'classnames'
 
-function Button({ children, size = 'large', type = 'primary' }) {
+function Button({ children, size = 'large', type = 'primary', onClick }) {
   const classnames = {
     [styles['btn--primary']]: type === 'primary',
     [styles['btn--secondary']]: type === 'secondary',
@@ -10,7 +10,7 @@ function Button({ children, size = 'large', type = 'primary' }) {
   }
 
   return (
-    <button className={`${cn(styles.btn, classnames)}`}>{children}</button>
+    <button className={`${cn(styles.btn, classnames)}`} onClick={onClick}>{children}</button>
   )
 }
 export default Button

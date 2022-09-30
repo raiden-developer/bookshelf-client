@@ -19,3 +19,12 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.block {
+  padding: 30px 20px;
+
+  border-radius: 16px;
+  background-color: $white;
+
+  @include main-shadow;
+}

@@ -23,9 +23,13 @@ $text-primary: #0f0f0f;
 $text-secondary: #767676;
 $text-tertiary: #a9a9a9;
 
-$fill-primary: #292929;
+$fill-primary: #132b50;
 $fill-secondary: #6c63ff;
 $fill-tertiary: #f3f3f3;
+
+@mixin main-shadow {
+  box-shadow: 0px 44px 104px rgba(19, 43, 80, 0.1);
+}
 
 @mixin c-pointer {
   cursor: pointer;
