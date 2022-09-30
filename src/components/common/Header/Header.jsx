@@ -8,7 +8,7 @@ function Header() {
     <header className={styles.header}>
       <div className={`${styles['header__inner']} container`}>
         <Logo />
-
+        <span style={{ fontSize: '24px', fontWeight: '700' }}>Books Impact</span>
         <Button>Вход/Регистрация</Button>
       </div>
 
