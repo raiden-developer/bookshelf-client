@@ -2,7 +2,7 @@ import styles from './Heading.module.scss'
 import cn from 'classnames'
 
 
-function Heading({ level = 'h2', type = 'h3', children }) {
+function Heading({ level = 'h2', type = 'h3', children, className }) {
   const Tag = level
 
   const classnames = {
@@ -12,7 +12,7 @@ function Heading({ level = 'h2', type = 'h3', children }) {
   }
 
   return (
-    <Tag className={cn(styles.heading, classnames)}>{children}</Tag>
+    <Tag className={cn(styles.heading, className, classnames)}>{children}</Tag>
   )
 }
 export default Heading

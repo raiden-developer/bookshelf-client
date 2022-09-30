@@ -7,12 +7,14 @@ function Field({
   placeholder = '',
   onChange,
   value,
-  required
+  required,
+  className
 }) {
   return (
-    <div className={styles.field}>
-      {labelText && <label htmlFor={id}>{labelText}</label>}
+    <div className={`${styles.field} ${className}`}>
+      {labelText && <label className={styles.label} htmlFor={id}>{labelText}</label>}
       <input
+        className={styles.input}
         type={type}
         id={id}
         placeholder={placeholder}
