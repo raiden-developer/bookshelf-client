@@ -1,0 +1,44 @@
+@import "../../../scss/global/variables.scss";
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 400;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+  outline: transparent;
+
+  transition: background-color 0.3s;
+
+  &--primary {
+    background-color: $fill-secondary;
+    color: $white;
+
+    &:hover {
+      background-color: darken($fill-secondary, 5%);
+    }
+
+    &:focus {
+    }
+
+    &:active {
+      background-color: darken($fill-secondary, 10%);
+    }
+  }
+
+  &--secondary {
+  }
+
+  &--small {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+
+  &--large {
+    padding: 15px 45px;
+  }
+}
